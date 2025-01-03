@@ -7,9 +7,9 @@ import socket
 # Email configuration
 SMTP_SERVER = "smtp.gmail.com"  # You can use any SMTP server
 SMTP_PORT = 587  # For TLS
-SENDER_EMAIL = "your_email@gmail.com"  # Sender's email address
+SENDER_EMAIL = "svkumarpal@gmail.com"  # Sender's email address
 SENDER_PASSWORD = "your_password"  # Sender's email password (consider using App Passwords if using Gmail)
-RECIPIENT_EMAIL = "recipient_email@example.com"  # Recipient's email address
+RECIPIENT_EMAIL = "shanvikasvp@gmail.com"  # Recipient's email address
 SUBJECT = "System Resource Alert - Utilization Exceeded Threshold"
 
 # Function to send email alert
