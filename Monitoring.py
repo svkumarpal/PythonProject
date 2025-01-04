@@ -9,7 +9,7 @@ SMTP_SERVER = "smtp.gmail.com"  # You can use any SMTP server
 SMTP_PORT = 587  # For TLS
 SENDER_EMAIL = "roo@k8sm.svkp.lab"  # Sender's email address
 SENDER_PASSWORD = "your_password"  # Sender's email password (consider using App Passwords if using Gmail)
-RECIPIENT_EMAIL = "shanvikasvp@gmail.com"  # Recipient's email address
+RECIPIENT_EMAIL = "svkumarpal@gmail.com"  # Recipient's email address
 SUBJECT = "System Resource Alert - Utilization Exceeded Threshold"
 
 # Function to send email alert
@@ -45,19 +45,19 @@ def check_system_utilization():
     alert_message = ""
 
     # Check CPU utilization
-    if cpu_usage > 90:
+    if cpu_usage > 95:
         alert_message += f"CPU Usage is critically high: {cpu_usage}%\n"
 
     # Check memory utilization
-    if memory.percent > 90:
+    if memory.percent > 95:
         alert_message += f"Memory Usage is critically high: {memory.percent}%\n"
 
     # Check swap utilization
-    if swap.percent > 90:
+    if swap.percent > 95:
         alert_message += f"Swap Usage is critically high: {swap.percent}%\n"
 
     # Check filesystem utilization
-    if disk.percent > 90:
+    if disk.percent > 95:
         alert_message += f"Filesystem Usage is critically high: {disk.percent}%\n"
 
     # If any resource usage exceeds the threshold, send an email alert
